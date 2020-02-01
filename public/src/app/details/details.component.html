@@ -1,0 +1,14 @@
+<div class = "">
+<p>Details about {{pet.name}}</p>
+<button (click)="goHome()">Home
+</button>
+      <p>Pet type: {{pet.type}}</p>
+      <p>Desctiption: {{pet.description}}</p>
+      <p>Skills: {{pet.skill1}} <br> {{pet.skill2}} <br>{{pet.skill3}}</p>
+      <p>Likes: {{pet.likes}}</p>
+      <button (click)="likePet(pet)" [disabled]="clicked" >Like this pet!</button>
+      <button (click)="adoptPet(pet._id)">Adopt this pet!</button>
+</div>
+
+
+
